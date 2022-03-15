@@ -1,0 +1,68 @@
+import emoji
+
+print(emoji.emojize('Welcome to my Computer Quiz :grinning_face_with_big_eyes:'))
+Playing = input("Do you want to play this game? Type 'YES' or 'NO' ").upper()
+if Playing != "YES":
+    quit("See you next time!")
+else:
+    print("Okay Sit tight and let's Play the game ")
+Score = 0
+
+answer_one = input("what is the full meaning of RAM? ").upper()
+
+if answer_one == "RANDOM ACCESS MEMORY":
+    print("Correct Answer!")
+    Score += 1
+else:
+    print("Wrong Answer!")
+
+answer_two = input("what is the full meaning of GPU? ").upper()
+
+if answer_two == "GRAPHICS PROCESSING UNIT":
+    print("Correct Answer!")
+    Score += 1
+else:
+    print("Wrong Answer!")
+
+answer_three = input("All components of a computer communicate through a circuit board called What? ").upper()
+
+if answer_three == "MOTHERBOARD":
+    print("Correct Answer!")
+    Score += 1
+elif answer_three == "MOTHER BOARD":
+    print("Correct Answer!")
+    Score += 1
+else:
+    print("Wrong Answer!")
+
+answer_four = input("What is termed as the BRAIN of the Computer? ").upper()
+
+if answer_four == "CENTRAL PROCESSING UNIT":
+    print("Correct Answer!")
+    Score += 1
+elif answer_four == "CPU":
+    print("Correct Answer!")
+    Score += 1
+else:
+    print("Wrong Answer!")
+
+answer_five = input("What allows you to communicate over a network and access the internet? ").upper()
+
+if answer_five == "NETWORK CARD":
+    print("Correct Answer!")
+    Score += 1
+else:
+    print("Wrong Answer!")
+
+answer_six = input("Where in the Computer is your software, documents, and other files stored? ").upper()
+
+if answer_six == "HARD DRIVE":
+    print("Correct Answer!")
+    Score += 1
+elif answer_six == "SOLID STATE DRIVE":
+    print("Correct Answer!")
+    Score += 1
+else:
+    print("Wrong Answer!")
+
+print(f'You got {Score} questions correct')
